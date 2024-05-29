@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="modalREstu.showModal()">Registro de Estudantes</button>
+    <dialog id="modalREstu">
+        <p>Registre um novo Estudante</p>
+        <input type="text" placeholder="matrícula do estudante">
+        <input type="text" placeholder="nome completo do estudante">
+        <button>Registrar</button>
+        <button onclick="modalREstu.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalCEstu.showModal()">Consulta de Estudantes</button>
+    <dialog id="modalCEstu">
+        <p>Consutar Estudante</p>
+        <input type="text" placeholder="matrícula do estudante">
+        <input type="text" placeholder="nome completo do estudante">
+        <button>Consultar</button>
+        <button onclick="modalCEstu.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalEdiE.showModal()">Edição de Estudantes</button>
+    <dialog id="modalEdiE">
+        <p>Editar Estudante</p>
+        <input type="text" placeholder="matrícula do estudante">
+        <input type="text" placeholder="nome completo do estudante">
+        <button>Editar</button>        
+        <button onclick="modalEdiE.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalExEstu.showModal()">Exclusão de Estudantes</button>
+    <dialog id="modalExEstu">
+        <p>Excluir Estudante</p>
+        <input type="text" placeholder="matrícula do estudante">
+        <input type="text" placeholder="nome completo do estudante">
+        <button>Excluir</button>        
+        <button onclick="modalExEstu.close()">Fechar</button>
+    </dialog> 
+</div>
+<a href="iniciobiblio.html"><button>Voltar</button></a>
+</body>
+</html>

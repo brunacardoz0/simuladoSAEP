@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="modalRE.showModal()">Registro de Empréstimos</button>
+    <dialog id="modalRE">
+        <p>Registre um novo empréstimo</p>
+        <input type="text" placeholder="código do empréstimo">
+        <input type="text" placeholder="código do livro">
+        <input type="text" placeholder="matrícula do estudante">
+        <input type="text" placeholder="data da retirada">
+        <input type="text" placeholder="data prevista de entrega">
+        <button>Registrar</button>
+        <button onclick="modalRE.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalCE.showModal()">Consulta de Empréstimos</button>
+    <dialog id="modalCE">
+        <p>Consultar um empréstimo</p>
+        <input type="text" placeholder="código do empréstimo">
+        <input type="text" placeholder="código do livro">
+        <input type="text" placeholder="matrícula do estudante">
+        <input type="text" placeholder="data da retirada">
+        <input type="text" placeholder="data prevista de entrega">
+        <button>Consultar</button>
+        <button onclick="modalCE.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalEe.showModal()">Edição de Empréstimos</button>
+    <dialog id="modalEe">
+        <p>Editar um empréstimo</p>
+        <input type="text" placeholder="Código empréstimo">
+        <button>Editar</button>
+        <button onclick="modalEe.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalEX.showModal()">Exclusão de Empréstimos</button>
+    <dialog id="modalEX">
+        <p>Excluir um empréstimo</p>
+        <input type="text" placeholder="Código empréstimo">
+        <button>Excluir</button>
+        <button onclick="modalEX.close()">Fechar</button>
+    </dialog> 
+    </div>
+    <a href="iniciobiblio.html"><button>Voltar</button></a>
+</body>
+</html>

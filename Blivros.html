@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="modalRL.showModal()">Registro de Livros</button>
+    <dialog id="modalRL">
+        <p>Registre um novo Livro</p>        
+        <input type="text" placeholder="nome do livro">
+        <input type="text" placeholder="código do livro">
+        <button>Registrar</button>       
+        <button onclick="modalRL.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalCL.showModal()">Consulta de Livros</button>
+    <dialog id="modalCL">
+        <p>Consultar Livro</p>        
+        <input type="text" placeholder="nome do livro">
+        <input type="text" placeholder="código do livro">
+        <button>Consultar</button>  
+        <button onclick="modalCL.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalEL.showModal()">Edição de Livros</button>
+    <dialog id="modalEL">
+        <p>Editar Livro</p>        
+        <input type="text" placeholder="nome do livro">
+        <input type="text" placeholder="código do livro">
+        <button>Editar</button>  
+        <button onclick="modalEL.close()">Fechar</button>
+    </dialog> 
+
+    <button onclick="modalEXL.showModal()">Exclusão de Livros</button>
+    <dialog id="modalEXL">
+        <p>Excluir Livro</p>        
+        <input type="text" placeholder="nome do livro">
+        <input type="text" placeholder="código do livro">
+        <button>Excluir</button>  
+        <button onclick="modalEXL.close()">Fechar</button>
+    </dialog> 
+</div>
+<a href="iniciobiblio.html"><button>Voltar</button></a>
+</body>
+</html>
